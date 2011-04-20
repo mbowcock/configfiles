@@ -70,6 +70,7 @@ set autoindent
 set expandtab
 set shiftwidth=4
 set ls=2
+set number
 filetype indent on
 colors solarized
 syntax on
