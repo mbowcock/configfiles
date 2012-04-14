@@ -16,7 +16,7 @@ let mapleader = ","
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 cmap w!! w !sudo tee % > /dev/null
-
+ino <S-tab> <C-x><C-o>
 nnoremap j gj
 nnoremap k gk
 
@@ -27,6 +27,7 @@ if has("autocmd")
     autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
     autocmd FileType python setlocal ts=4 sw=4 sts=4 expandtab
+    autocmd FileType jade setlocal ts=2 sts=2 sw=2 expandtab
 endif
 
 set noswapfile
